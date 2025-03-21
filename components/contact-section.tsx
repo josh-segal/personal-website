@@ -1,14 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, Linkedin, Github } from "lucide-react"
+import githubLogo from "../public/github.svg"
+import linkedinLogo from "../public/linkedin.svg"
+import mailLogo from "../public/mail.svg"
 
 export function ContactSection() {
-  // Set to true to use custom images, false to use default icons
-  const useCustomImages = {
-    email: false,
-    linkedin: false,
-    github: false,
-  }
 
   return (
     <div className="container px-4 text-center">
@@ -16,67 +12,55 @@ export function ContactSection() {
 
       <div className="flex flex-col items-center space-y-6 max-w-md mx-auto">
         <Link
-          href="mailto:your.email@example.com"
+          href="mailto:segal.jo@northeastern.edu"
           className="flex items-center space-x-3 w-full p-4 border rounded-lg hover:bg-muted transition-colors"
         >
-          {useCustomImages.email ? (
             <div className="relative w-5 h-5">
               <Image
-                src="/placeholder.svg?height=20&width=20"
+                src={mailLogo}
                 alt="Email"
                 width={20}
                 height={20}
                 className="object-contain"
               />
             </div>
-          ) : (
-            <Mail className="h-5 w-5" />
-          )}
-          <span>your.email@example.com</span>
+          <span>segal.jo@northeastern.edu</span>
         </Link>
 
         <Link
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/joshua-francis-segal/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-3 w-full p-4 border rounded-lg hover:bg-muted transition-colors"
         >
-          {useCustomImages.linkedin ? (
             <div className="relative w-5 h-5">
               <Image
-                src="/placeholder.svg?height=20&width=20"
+                src={linkedinLogo}
                 alt="LinkedIn"
                 width={20}
                 height={20}
                 className="object-contain"
               />
             </div>
-          ) : (
-            <Linkedin className="h-5 w-5" />
-          )}
-          <span>LinkedIn Profile</span>
+          <span>LinkedIn</span>
         </Link>
 
         <Link
-          href="https://github.com/yourusername"
+          href="https://github.com/josh-segal"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-3 w-full p-4 border rounded-lg hover:bg-muted transition-colors"
         >
-          {useCustomImages.github ? (
             <div className="relative w-5 h-5">
               <Image
-                src="/placeholder.svg?height=20&width=20"
+                src={githubLogo}
                 alt="GitHub"
                 width={20}
                 height={20}
                 className="object-contain"
               />
             </div>
-          ) : (
-            <Github className="h-5 w-5" />
-          )}
-          <span>GitHub Profile</span>
+          <span>GitHub</span>
         </Link>
       </div>
     </div>

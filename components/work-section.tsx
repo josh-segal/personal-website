@@ -1,4 +1,9 @@
 import Image from "next/image"
+import hmsLogo from "../public/hms.svg"
+import houseflyLogo from "../public/housefly.svg"
+import hillelLogo from "../public/hillel.svg"
+import aibadgeLogo from "../public/aibadge.svg"
+import hscLogo from "../public/hsc.svg"
 
 export function WorkSection() {
   return (
@@ -10,10 +15,11 @@ export function WorkSection() {
           <h3 className="text-xl font-semibold">Professional Experience</h3>
 
           <div className="space-y-6">
+
             <div className="flex gap-3">
               <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src={houseflyLogo}
                   alt="Company Logo"
                   width={40}
                   height={40}
@@ -21,16 +27,16 @@ export function WorkSection() {
                 />
               </div>
               <div className="border-l-2 border-primary pl-4 py-1">
-                <h4 className="font-medium">Senior Developer</h4>
-                <p className="text-sm text-muted-foreground">Company Name • 2020 - Present</p>
-                <p className="mt-2">Led development of key projects and mentored junior developers.</p>
+                <h4 className="font-medium">Founding Engineer</h4>
+                <p className="text-sm text-muted-foreground">HouseFly • Jan. 2025 - Present</p>
+                <p className="mt-2"></p>
               </div>
             </div>
 
             <div className="flex gap-3">
               <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src={hmsLogo}
                   alt="Company Logo"
                   width={40}
                   height={40}
@@ -38,11 +44,46 @@ export function WorkSection() {
                 />
               </div>
               <div className="border-l-2 border-primary pl-4 py-1">
-                <h4 className="font-medium">Web Developer</h4>
-                <p className="text-sm text-muted-foreground">Previous Company • 2017 - 2020</p>
-                <p className="mt-2">Developed and maintained client websites and applications.</p>
+                <h4 className="font-medium">Software Engineer Intern</h4>
+                <p className="text-sm text-muted-foreground">Harvard Medical School • Sept. 2024 - Dec. 2024</p>
+                <p className="mt-2"></p>
               </div>
             </div>
+
+            <div className="flex gap-3">
+              <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
+                <Image
+                  src={hmsLogo}
+                  alt="Company Logo"
+                  width={40}
+                  height={40}
+                  className="object-cover"
+                />
+              </div>
+              <div className="border-l-2 border-primary pl-4 py-1">
+                <h4 className="font-medium">Machine Learning Engineer Intern</h4>
+                <p className="text-sm text-muted-foreground">Harvard Medical School • July 2024 - Sept. 2024</p>
+                <p className="mt-2"></p>
+              </div>
+            </div>
+
+            <div className="flex gap-3">
+              <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
+                <Image
+                  src={hillelLogo}
+                  alt="Company Logo"
+                  width={40}
+                  height={40}
+                  className="object-cover"
+                />
+              </div>
+              <div className="border-l-2 border-primary pl-4 py-1">
+                <h4 className="font-medium">Data Analyst</h4>
+                <p className="text-sm text-muted-foreground">Hillel International • Jan. 2024 - May 2024</p>
+                <p className="mt-2"></p>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -51,25 +92,41 @@ export function WorkSection() {
 
           <div className="space-y-6">
             <div className="border-l-2 border-primary pl-4 py-1">
-              <h4 className="font-medium">E-commerce Platform</h4>
-              <p className="mt-2">Built a full-stack e-commerce solution with Next.js and Stripe.</p>
+              <h4 className="font-medium">Roommate Matching App</h4>
+              <p className="mt-2"></p>
             </div>
 
             <div className="border-l-2 border-primary pl-4 py-1">
-              <h4 className="font-medium">Portfolio Website</h4>
-              <p className="mt-2">Designed and developed a responsive portfolio website.</p>
+              <h4 className="font-medium">Stock-Legislation Predictor</h4>
+              <p className="mt-2"></p>
             </div>
+
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <h4 className="font-medium">NLP Similarity Framework</h4>
+              <p className="mt-2"></p>
+            </div>
+
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <h4 className="font-medium">AI Calender Assistant</h4>
+              <p className="mt-2"></p>
+            </div>
+
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <h4 className="font-medium">Trip Planning & Ranking Website</h4>
+              <p className="mt-2"></p>
+            </div>
+
           </div>
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-xl font-semibold">Awards</h3>
+          <h3 className="text-xl font-semibold">Awards & Certifications</h3>
 
           <div className="space-y-6">
             <div className="flex gap-3">
               <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src={hscLogo}
                   alt="Award"
                   width={40}
                   height={40}
@@ -77,16 +134,16 @@ export function WorkSection() {
                 />
               </div>
               <div className="border-l-2 border-primary pl-4 py-1">
-                <h4 className="font-medium">Best Web Design</h4>
-                <p className="text-sm text-muted-foreground">Design Awards • 2022</p>
-                <p className="mt-2">Recognized for excellence in web design and user experience.</p>
+                <h4 className="font-medium">Husky Startup Challenge</h4>
+                <p className="text-sm text-muted-foreground">Top 8 Finalist • 2025</p>
+                <p className="mt-2"></p>
               </div>
             </div>
 
             <div className="flex gap-3">
               <div className="relative flex-shrink-0 w-10 h-10 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src={aibadgeLogo}
                   alt="Award"
                   width={40}
                   height={40}
@@ -94,9 +151,9 @@ export function WorkSection() {
                 />
               </div>
               <div className="border-l-2 border-primary pl-4 py-1">
-                <h4 className="font-medium">Innovation Award</h4>
-                <p className="text-sm text-muted-foreground">Tech Conference • 2021</p>
-                <p className="mt-2">Awarded for innovative approach to solving complex problems.</p>
+                <h4 className="font-medium">AI Literacy</h4>
+                <p className="text-sm text-muted-foreground">Institute for Experiential AI • 2024</p>
+                <p className="mt-2"></p>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 
 export function HeroSection() {
   const [displayText, setDisplayText] = useState("")
-  const fullText = "John Doe" // Replace with your name
+  const fullText = "Joshua Segal" 
   const typingSpeed = 150 // milliseconds per character
   const typingRef = useRef<NodeJS.Timeout | null>(null)
 
