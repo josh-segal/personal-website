@@ -33,13 +33,13 @@ export function BackToTop() {
       variant="outline"
       size="icon"
       className={cn(
-        "fixed bottom-8 right-8 z-50 rounded-full shadow-md transition-opacity duration-300",
+        "fixed bottom-10 right-10 z-50 rounded-full shadow-md transition-opacity duration-300 h-12 w-12",
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none",
       )}
       onClick={scrollToTop}
       aria-label="Back to top"
     >
-      <ArrowUp className="h-4 w-4" />
+      <ArrowUp className="h-5 w-5" />
     </Button>
   )
 }

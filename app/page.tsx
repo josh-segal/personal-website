@@ -15,15 +15,15 @@ export default function Home() {
         <HeroSection />
       </section>
 
-      <section id="work" className="min-h-screen flex items-center justify-center py-16">
+      <section id="work" className="min-h-screen flex items-center justify-center py-20">
         <WorkSection />
       </section>
 
-      <section id="about" className="min-h-screen flex items-center justify-center py-16">
+      <section id="about" className="min-h-screen flex items-center justify-center py-20">
         <AboutSection />
       </section>
 
-      <section id="contact" className="min-h-screen flex items-center justify-center py-16">
+      <section id="contact" className="min-h-screen flex items-center justify-center py-20">
         <ContactSection />
       </section>
     </main>
