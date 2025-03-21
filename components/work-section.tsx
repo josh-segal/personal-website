@@ -34,7 +34,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Founding Engineer</h4>
                 <p className="text-sm text-muted-foreground">HouseFly • Jan. 2025 - Present</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">Built roommate matching mobile app, achieving 300+ users and $3600+ revenue. </p>
               </div>
             </Link>
 
@@ -56,7 +56,13 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Software Engineer Intern</h4>
                 <p className="text-sm text-muted-foreground">Harvard Medical School • Sept. 2024 - Dec. 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">
+                  Led development of ML desktop application for neuron segmentation data analysis. 
+                  Reduced data analysis time by 99.9% (20 minutes manual to 0.5 seconds automated), 
+                  and reduced human error by maintaining 93% correlation to six neuroscientists. 
+                  Developed data processing framework for improving data quality with STAPLE and Majority Voting algorithms, 
+                  improved data precision by 22% across 500+ images.
+                  </p>
               </div>
             </Link>
 
@@ -78,11 +84,14 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Machine Learning Engineer Intern</h4>
                 <p className="text-sm text-muted-foreground">Harvard Medical School • July 2024 - Sept. 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">
+                  Developed custom CNN architecture for neuron instance segmentation by extending open-source YOLOv8 model with custom loss function and augmented input feature space weight map, 
+                  improved average precision by 32%.
+                  Built semi-supervised data labeling pipeline, saving 150+ hours and achieving 100% recall, 96% precision across 500+ images</p>
               </div>
             </Link>
 
-            <Link
+            {/* <Link
               href="https://hillel.org"
               target="_blank"
               rel="noopener noreferrer"
@@ -100,9 +109,9 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Data Analyst</h4>
                 <p className="text-sm text-muted-foreground">Hillel International • Jan. 2024 - May 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm"></p>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -110,13 +119,13 @@ export function WorkSection() {
           <h3 className="text-2xl font-semibold">Projects</h3>
 
           <div className="space-y-6">
-            <Link href="javascript:;" className="block p-4 border rounded-lg hover:bg-muted transition-colors">
+            {/* <Link href="javascript:;" className="block p-4 border rounded-lg hover:bg-muted transition-colors">
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Roommate Matching App</h4>
                 <p className="text-sm text-muted-foreground">Jan. 2025 - Present</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">Mobile app for finding roommate matches</p>
               </div>
-            </Link>
+            </Link> */}
 
             <Link
               href="https://github.com/josh-segal/public-interest"
@@ -127,7 +136,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Stock-Legislation Predictor</h4>
                 <p className="text-sm text-muted-foreground">May 2024 - June 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">ML Web app that tracks and predicts correlation between legislation, legislators, and stock price</p>
               </div>
             </Link>
 
@@ -141,7 +150,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">NLP Similarity Framework</h4>
                 <p className="text-sm text-muted-foreground">March 2024 - May 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">AI tool and research on automated paper-presentation similarity</p>
               </div>
             </Link>
             
@@ -155,7 +164,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">AI Calendar Assistant</h4>
                 <p className="text-sm text-muted-foreground">Feb. 2024 - March 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">AI calendar assistant that automates task scheduling, management, and push notifications</p>
               </div>
             </Link>
 
@@ -167,9 +176,9 @@ export function WorkSection() {
               className="block p-4 border rounded-lg hover:bg-muted transition-colors"
             >
               <div className="border-l-2 border-primary pl-4 py-1">
-                <h4 className="text-lg font-medium">Trip Planning & Ranking Website</h4>
+                <h4 className="text-lg font-medium">Local Tourist</h4>
                 <p className="text-sm text-muted-foreground">Dec. 2023 - Feb. 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm">Web app for trip planning, ranking, and optimal route navigation</p>
               </div>
             </Link>
           </div>
@@ -198,7 +207,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Husky Startup Challenge</h4>
                 <p className="text-sm text-muted-foreground">Top 8 Finalist • 2025</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm"></p>
               </div>
             </Link>
             
@@ -220,7 +229,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">AI Literacy Certificate</h4>
                 <p className="text-sm text-muted-foreground">Institute for Experiential AI • 2024</p>
-                <p className="mt-2"></p>
+                <p className="mt-2 text-sm"></p>
               </div>
             </Link>
           </div>
