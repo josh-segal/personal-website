@@ -34,7 +34,7 @@ export function WorkSection() {
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Founding Engineer</h4>
                 <p className="text-sm text-muted-foreground">HouseFly • Jan. 2025 - Present</p>
-                <p className="mt-2 text-sm">Built roommate matching mobile app, achieving 300+ users and $3600+ revenue. </p>
+                <p className="mt-2 text-sm">Built roommate matching mobile app, achieving 300+ users and $3600+ revenue. Won $3,000 in funding pitching to VC panel.</p>
               </div>
             </Link>
 
@@ -206,7 +206,9 @@ export function WorkSection() {
               </div>
               <div className="border-l-2 border-primary pl-4 py-1">
                 <h4 className="text-lg font-medium">Husky Startup Challenge</h4>
-                <p className="text-sm text-muted-foreground">Top 8 Finalist • 2025</p>
+                <p className="text-sm text-muted-foreground"> March 2025</p>
+                <p className="mt-2 text-sm">2nd Place • $2,500</p>
+                <p className="mt-2 text-sm">Social Media Award • $500</p>
                 <p className="mt-2 text-sm"></p>
               </div>
             </Link>
