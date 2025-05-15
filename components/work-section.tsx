@@ -16,6 +16,22 @@ export function WorkSection() {
           <h3 className="text-2xl font-semibold">Professional Experience</h3>
 
           <div className="space-y-6">
+
+          <div
+              className="flex gap-4 p-4 border rounded-lg hover:bg-muted transition-colors"
+            >
+              <div className="relative flex-shrink-0 w-12 h-12 rounded-md overflow-hidden bg-muted flex items-center justify-center mt-1">
+                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-400">NeXT</span>
+                </div>
+              </div>
+              <div className="border-l-2 border-primary pl-4 py-1">
+                <h4 className="text-lg font-medium">Incoming Software Engineer Co-op</h4>
+                <p className="text-sm text-muted-foreground">NeXT • July 2025 - Dec. 2025</p>
+                <p className="mt-2 text-sm"></p>
+              </div>
+            </div>
+
             <Link
               href="https://www.houseflyai.com/"
               target="_blank"
@@ -126,6 +142,19 @@ export function WorkSection() {
                 <p className="mt-2 text-sm">Mobile app for finding roommate matches</p>
               </div>
             </Link> */}
+
+            <Link
+              href="https://github.com/MiloMargolis/text-me-assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-4 border rounded-lg hover:bg-muted transition-colors"
+            >
+              <div className="border-l-2 border-primary pl-4 py-1">
+                <h4 className="text-lg font-medium">AI SMS Assistant</h4>
+                <p className="text-sm text-muted-foreground">May 2025 - Present</p>
+                <p className="mt-2 text-sm">AI SMS assistant that filters staff messages, auto-responds to FAQs, and routes priority items to management</p>
+              </div>
+            </Link>
 
             <Link
               href="https://github.com/josh-segal/public-interest"
