@@ -1,11 +1,14 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 export function Navigation() {
   const [activeSection, setActiveSection] = useState("hero")
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId)
@@ -15,9 +18,19 @@ export function Navigation() {
     }
   }
 
+  const handleNavigation = (item: { id: string, label: string }) => {
+    if (pathname === "/") {
+      // On home page, scroll to section
+      scrollToSection(item.id)
+    } else {
+      // On other pages, navigate to home page with hash
+      window.location.href = `/#${item.id}`
+    }
+  }
+
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "work", "about", "contact"]
+      const sections = ["hero", "work", "about", "blog", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -32,9 +45,12 @@ export function Navigation() {
       }
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    // Only add scroll listener on home page
+    if (pathname === "/") {
+      window.addEventListener("scroll", handleScroll)
+      return () => window.removeEventListener("scroll", handleScroll)
+    }
+  }, [pathname])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm py-6">
@@ -56,11 +72,12 @@ export function Navigation() {
             { id: "hero", label: "Home" },
             { id: "work", label: "Work" },
             { id: "about", label: "About" },
+            { id: "blog", label: "Blog" },
             { id: "contact", label: "Contact" },
           ].map((item) => (
             <li key={item.id}>
               <button
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavigation(item)}
                 className={cn(
                   "text-base font-medium transition-colors hover:text-primary px-2 py-1",
                   activeSection === item.id ? "text-primary" : "text-muted-foreground",
@@ -84,11 +101,12 @@ export function Navigation() {
               { id: "hero", label: "Home" },
               { id: "work", label: "Work" },
               { id: "about", label: "About" },
+              { id: "blog", label: "Blog" },
               { id: "contact", label: "Contact" },
             ].map((item) => (
               <li key={item.id} className="w-full">
                 <button
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item)}
                   className={cn(
                     "text-base font-medium transition-colors hover:text-primary w-full py-3",
                     activeSection === item.id ? "text-primary" : "text-muted-foreground",
