@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function BlogSection() {
   return (
-    <div className="w-full bg-gradient-to-br from-slate-50 via-white to-slate-50">
+    <div className="w-full bg-white">
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header */}

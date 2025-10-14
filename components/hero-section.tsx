@@ -26,12 +26,16 @@ export function HeroSection() {
   }, [])
 
   return (
-    <div className="container px-4 md:px-6 text-center">
-      <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-8">
-        {displayText}
-        <span className="animate-blink">|</span>
-      </h1>
-      <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">Welcome to my personal website</p>
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden w-full bg-white">
+      
+      {/* Content */}
+      <div className="relative z-10 container px-4 md:px-6 text-center w-full">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-8 text-black/80">
+          {displayText}
+          <span className="animate-blink">|</span>
+        </h1>
+        <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto">Welcome to my personal website</p>
+      </div>
     </div>
   )
 }
