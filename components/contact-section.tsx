@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, Linkedin, Github } from "lucide-react"
 import mailLogo from "../public/mail.svg"
 import linkedinLogo from "../public/linkedin.svg"
 import githubLogo from "../public/github.svg"

@@ -1,6 +1,11 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import linkedinLogo from "../public/linkedin.svg"
+import githubLogo from "../public/github.svg"
+import { FileText } from "@deemlol/next-icons"
 
 export function HeroSection() {
   const [displayText, setDisplayText] = useState("")
@@ -35,6 +40,46 @@ export function HeroSection() {
           <span className="animate-blink">|</span>
         </h1>
         <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto">Welcome to my personal website</p>
+
+        <div className="flex justify-center items-center gap-6 mt-8">
+          <Link
+            href="https://github.com/josh-segal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform duration-300"
+          >
+            <Image
+              src={githubLogo}
+              alt="GitHub"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/joshua-francis-segal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform duration-300"
+          >
+            <Image
+              src={linkedinLogo}
+              alt="LinkedIn"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
+          </Link>
+          <Link
+            href="https://github.com/josh-segal/resume/blob/main/Joshua_Segal_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition-transform duration-300"
+          >
+            <FileText size={32} color="#000" />
+          </Link>
+        </div>
+        
       </div>
     </div>
   )

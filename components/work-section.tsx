@@ -33,9 +33,9 @@ export function WorkSection() {
                           />
                     </div>
                     <div className="border-l-2 border-primary pl-4 py-1">
-                      <h4 className="text-lg font-medium group-hover:text-blue-600 transition-colors duration-300">Software Engineer Co-op - Full-Stack</h4>
+                      <h4 className="text-lg font-medium group-hover:text-blue-600 transition-colors duration-300">Software Engineer</h4>
                       <p className="text-sm text-muted-foreground">NExT Consulting • July 2025 - Dec. 2025</p>
-                      <p className="mt-2 text-sm">Building production warehouse management system for industrial manufacturing client</p>
+                      <p className="mt-2 text-sm">Designed, implemented, and deployed production WMS</p>
                     </div>
                   </div>
                 </CardContent>
@@ -62,7 +62,7 @@ export function WorkSection() {
                         <div className="border-l-2 border-primary pl-4 py-1">
                           <h4 className="text-lg font-medium group-hover:text-blue-600 transition-colors duration-300">Co-Founder</h4>
                           <p className="text-sm text-muted-foreground">HouseFly • Jan. 2025 - Present</p>
-                          <p className="mt-2 text-sm">Building AI tools for real estate agents to automate tasks and improve efficiency</p>
+                          <p className="mt-2 text-sm">Building AI tools for real estate firms</p>
                         </div>
                       </div>
                     </CardContent>
@@ -88,10 +88,10 @@ export function WorkSection() {
                           />
                         </div>
                         <div className="border-l-2 border-primary pl-4 py-1">
-                          <h4 className="text-lg font-medium group-hover:text-blue-600 transition-colors duration-300">Software Engineer Intern - Backend & ML</h4>
+                          <h4 className="text-lg font-medium group-hover:text-blue-600 transition-colors duration-300">Machine Learning Engineer</h4>
                           <p className="text-sm text-muted-foreground">Harvard Medical School • Sept. 2024 - Dec. 2024</p>
                           <p className="mt-2 text-sm">
-                          Built ML-powered neuron segmentation tool for neuroscience researchers</p>
+                          Built ml infra and developed custom CV models (UNet, CNN) for novel neuroscience research</p>
                         </div>
                       </div>
                     </CardContent>
